@@ -8,6 +8,5 @@ const episodeSchema = new mongoose.Schema({
     episode_cover: String
 })
 
-//repalce "new" later
 const Episode = mongoose.model("episodes",episodeSchema)
 module.exports = Episode
