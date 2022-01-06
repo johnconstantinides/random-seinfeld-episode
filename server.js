@@ -25,7 +25,7 @@ mongoose.connection.once('open', () => {
 
 app.get('/',(req,res) => {
     episodeModel.find()
-        .then(episodes => res.json(episodes))
-        .catch(err => res.status(400).json("Error: " + err));
+        .then(episode => res.json(episode))
+        .catch(err => res.status(400).json('Error '+ err));
 });
 
