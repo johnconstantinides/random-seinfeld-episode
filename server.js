@@ -25,7 +25,8 @@ mongoose.connection.once('open', () => {
 
 app.get('/',(req,res) => {
     episodeModel.find()
-        .then(episode => res.json(episode))
+        .then(episode => res.json(episode[Math.floor(Math.random()*episode.length)]))
         .catch(err => res.status(400).json('Error '+ err));
 });
+
 
