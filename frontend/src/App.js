@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import React from 'react';
 
-import Episode from './components/Episode';
+
+import RandomEpisode from './components/RandomEpisode';
 
 function App() {
 
+
+
   return (
     <div className="App">
-      <Episode />
+      <RandomEpisode />
     </div>
   );
 }
