@@ -5,9 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("../public/seinfeld.jpg");
+  background-size: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.descripton{
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  padding: 5px;
+  border-style: solid;
+  background: #B3BF0D;
+  bottom: 5px;
+  position: fixed;
+  left: 10%;
+}
+.randomepisode{
+  top: 5px;
+}
+
+
+.responsive{
+  width: 28%;
+  height: 25%;
+}
+
+footer{
+  display: none;
 }

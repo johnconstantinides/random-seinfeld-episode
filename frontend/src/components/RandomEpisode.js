@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "../index.css"
 
 function RandomEpisode() {
 
@@ -17,19 +18,18 @@ function RandomEpisode() {
     },[])
 
     return(
-        <div>
+        <div class="randomepisode">
         <h1>Random Seinfeld Episode</h1>
         <h2>{data.title}</h2>
         <figure>
-            <img src ={data.episode_cover}></img>
+            <img src ={data.episode_cover} alt="Episode cover" className="responsive" />
             <figcaption> Season {data.season} Episode {data.episode}</figcaption>
         </figure>
-        <div>
+        <div class="descripton">
             <h3>Description</h3>
-            <p>{data.description}</p>
-        </div>
+            <p >{data.description}</p>
         <button onClick={getEpisodeData}>Get Another Episode</button>
-        
+        </div>
         </div>
     )
 }
