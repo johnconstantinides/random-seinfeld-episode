@@ -7,28 +7,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url("../public/seinfeld.jpg");
   background-size: 100%;
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+html{
+  min-height: 100%;
+}
 .descripton{
-  margin: auto;
+  clear: both;
   text-align: center;
   width: 80%;
   padding: 5px;
   border-style: solid;
   background: #B3BF0D;
   bottom: 5px;
-  position: fixed;
+  position: relative;
+  height: 200px;
+  margin-top: 200px;
   left: 10%;
 }
+
 .randomepisode{
   top: 5px;
 }
 
+#content img{
+  height: 30%;
+  width: 30%;
+  padding: 2%;
+}
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+}
 
 .responsive{
   width: 28%;
