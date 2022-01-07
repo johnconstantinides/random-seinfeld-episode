@@ -5,8 +5,10 @@ const episodeSchema = new mongoose.Schema({
     season: Number,
     episode: Number,
     date: String,
-    episode_cover: String
+    episode_cover: String,
+    reviews: Number,
+    rating: Number
 })
 
-const Episode = mongoose.model("episodes",episodeSchema)
+const Episode = mongoose.model("episodes2",episodeSchema)
 module.exports = Episode

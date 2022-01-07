@@ -26,6 +26,8 @@ for i in range(1,10):
         k['episode'] = j + 1
         k['date'] = date[j].text.strip()
         k['episode_cover'] = image[j].find('img')['src']
+        k['reviews'] = 0
+        k['rating'] = 0
         info.append(k)
 
 write_json(info,file)
