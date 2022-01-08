@@ -13,7 +13,6 @@ app.use(cors());
 app.use(express.json());
 
 if(process.env.NODE_ENV === 'production'){
-    console.log("test")
     app.use(express.static(path.join(__dirname, "frontend", "build")));
     app.get("*", (req, res) => {
         res.sendFile(path.join(__dirname, "frontend", "build", "index.html"));
