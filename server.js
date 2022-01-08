@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('frontend/build'));
+    app.use(express.static())
 }
 
 app.listen(port, () => {
@@ -32,5 +32,6 @@ app.get('/',(req,res) => {
         .then(episode => res.json(episode[Math.floor(Math.random()*episode.length)]))
         .catch(err => res.status(400).json('Error '+ err));
 });
+
 
 
