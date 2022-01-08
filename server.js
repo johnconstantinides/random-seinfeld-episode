@@ -12,6 +12,9 @@ app.use(cors());
 app.use(express.json());
 
 
+app.listen(port, () => {
+    console.log(`server running on port : ${port}`)
+})
 
 //connect to database
 mongoose.connect(process.env.ATLAS_URI, {useNewUrlParser: true});
@@ -26,21 +29,6 @@ app.get('/',(req,res) => {
         .then(episode => res.json(episode[Math.floor(Math.random()*episode.length)]))
         .catch(err => res.status(400).json('Error '+ err));
 });
-
-
-
-const __dirname1 = path.resolve();
-if(process.env.NODE_ENV === "production"){
-    app.use(express.static(path.join(__dirname1, "frontend/build")))
-
-    app.get('*',(req,res) =>{
-        res.sendFile(path.resolve(__dirname1,"frontend","build","index.html"));
-    });
-}
-
-app.listen(port, () => {
-    console.log(`server running on port : ${port}`)
-})
 
 
 

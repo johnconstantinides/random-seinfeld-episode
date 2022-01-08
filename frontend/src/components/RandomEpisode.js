@@ -8,7 +8,7 @@ function RandomEpisode() {
     const [data, setData] = useState("")
 
     const getEpisodeData = () => {
-        axios.get("https://random-seinfeld-episode.herokuapp.com/")
+        axios.get("http://localhost:5000")
          .then(response => {
            setData(response.data)
          })
