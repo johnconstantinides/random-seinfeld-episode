@@ -24,6 +24,9 @@ function RandomEpisode() {
             <div class="container">
                 <div class="jumbotron">
                 <h1>Random Seinfeld Episode</h1>
+                </div>
+            </div>
+            <br/>
                 <div class="container" id="content">
                         <img src={data.episode_cover} class="img-fluid" id="epsiode_cover"/>
                 </div>
@@ -40,9 +43,6 @@ function RandomEpisode() {
                         <br/>
                     </div>
                     <button type="button" class="btn btn-primary" onClick={getEpisodeData}>Get a new Episode</button>
-                </div>
-            </div>
-            <br/>
                 </div>
                 
             </body>
