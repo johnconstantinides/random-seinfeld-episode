@@ -30,7 +30,7 @@ html{
 
 .randomepisode{
   top: 5px;
-  background-image: url("../public/seinfeld.jpg");
+  background-image: url("./public/seinfeld.jpg");
   background-size: 100%;
   padding: 0;
 }
