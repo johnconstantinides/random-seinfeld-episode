@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("../public/Seinfeld_logo.svg.png");
-  background-size: auto;
+  background-size: 100vh;
   padding: 0;
 }
 
