@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("../public/seinfeld.jpg");
+  background-repeat:no-repeat;
   background-size: 100%;
   padding: 0;
 }
