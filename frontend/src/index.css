@@ -5,11 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../public/seinfeld.jpg");
-  background-repeat:no-repeat;
-  background-position: center;
-  background-size: 100%;
-  padding: 0;
 }
 
 code {
@@ -35,6 +30,9 @@ html{
 
 .randomepisode{
   top: 5px;
+  background-image: url("../public/seinfeld.jpg");
+  background-size: 100%;
+  padding: 0;
 }
 
 #content img{
